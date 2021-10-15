@@ -13,7 +13,7 @@
 // @grant       GM_xmlhttpRequest
 // @grant       GM_setClipboard
 // @connect     *
-// @version     20211011
+// @version     1.0.3
 // ==/UserScript==
 
 let GM_scriptVersion = '';
