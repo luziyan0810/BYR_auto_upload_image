@@ -5,8 +5,8 @@
 // @include     http*://byr.pt*/upload.php*
 // @include     http*://byr.pt*/edit.php*
 // @include     http*://byr.pt*/topic.php*
-// @include     http*://byr.pt*/offers.php*&edit*
-// @include     http*://byr.pt*/offers.php*&add*
+// @include     http*://byr.pt*/offers.php*edit*
+// @include     http*://byr.pt*/offers.php*add*
 // @icon        https://byr.pt/favicon.ico
 // @require     https://cdn.jsdelivr.net/npm/resemblejs@2.10.0/resemble.min.js
 // @run-at      document-end
@@ -97,7 +97,7 @@ input.pic_info_url {
 
         $('#pic_info_cover').change(function () {
             var src = $(this).val().trim();
-            src = src.replace(/img1.doubanio.com\/view\/photo\/raw\/public/ig, 'img1.doubanio.com\/view\/photo\/l_raito_poster\/public')
+            src = src.replace(/doubanio.com\/view\/photo\/raw\/public/ig, 'doubanio.com\/view\/photo\/l_raito_poster\/public')
             coverReady = false;
             renderPreview();
             if (src) {
