@@ -40,7 +40,6 @@ if (GM_info && GM_info.script) {
 预览<br>
 <div id="pic_info_preview"></div>
 <br><button class="pic_info_fill">点击将图片插入简介最后</button><br>
-<br><button class="pic_info_insert">点击将图片插入简介光标处</button><br>
 <style>
 #pic_info_row button {
     font-size: 9pt;
