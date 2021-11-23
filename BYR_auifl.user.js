@@ -13,7 +13,7 @@
 // @grant       GM_xmlhttpRequest
 // @grant       GM_setClipboard
 // @connect     *
-// @version     1.1.1
+// @version     1.1.2
 // @updateURL        https://cdn.jsdelivr.net/gh/normalx/BYR_auto_upload_image@main/BYR_auifl.user.js
 // @downloadURL      https://github.com/normalx/BYR_auto_upload_image/raw/main/BYR_auifl.user.js
 // ==/UserScript==
@@ -336,3 +336,4 @@ input.pic_info_url {
 
 //v1.1.0 将“插入图片至简介最后”修改为“插入图片至简介光标处” (Thanks @shadows)
 //v1.1.1 细节优化；
+//v1.1.2 增加括号的匹配；
