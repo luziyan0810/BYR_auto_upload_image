@@ -135,7 +135,7 @@ input.pic_info_url {
             if (index !=-1){
                 filename=filename.substring(0,index)
             }
-            filename = filename.replace(/[^A-Za-z0-9._-]/g, '');
+            filename = filename.replace(/[^A-Za-z0-9._\-\(\)\[\]]/g, '');
             filename = filename.replace(/0x/ig, '0plusx');
             filename = filename.replace(/title/ig, 'titie');
             filename = filename.replace(/applet/ig, 'abbiet');
