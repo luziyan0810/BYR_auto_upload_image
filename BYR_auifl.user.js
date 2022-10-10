@@ -14,7 +14,7 @@
 // @grant       GM_xmlhttpRequest
 // @grant       GM_setClipboard
 // @connect     *
-// @version     1.1.2
+// @version     1.1.3
 // @updateURL        https://cdn.jsdelivr.net/gh/normalx/BYR_auto_upload_image@main/BYR_auifl.user.js
 // @downloadURL      https://github.com/normalx/BYR_auto_upload_image/raw/main/BYR_auifl.user.js
 // ==/UserScript==
