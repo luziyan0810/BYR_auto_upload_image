@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        BYRBT插入图片
 // @author      Deparsoul & luziyan & lijishi
+// @contributor liuwilliam
 // @description 上传图片脚本，魔改自@Deparsoul的一键生成新番信息脚本
 // @include     http*://byr.pt*/upload.php*
 // @include     http*://byr.pt*/edit.php*
@@ -294,18 +295,7 @@ if (window.GM_info && window.GM_info.script) {
           return a[0].outerHTML
         })
         .get()
-      // const reference = $('.pic_info_reference')
-      //   .map(function () {
-      //     const href = $(this).val().trim()
-      //     if (!href) return null
-      //     const a = $('<a target="_blank" rel="noopener noreferrer"></a>')
-      //       .attr('href', href)
-      //       .text(href)
-      //     const c = 'byrbt_pic_info_reference'
-      //     a.addClass(c).addClass($(this).attr('id').replace('pic_info', c))
-      //     return a[0].outerHTML
-      //   })
-      //   .get()
+
       if ($('.ckeditor').length) fill.show()
       else fill.hide()
     }
@@ -399,16 +389,3 @@ if (window.GM_info && window.GM_info.script) {
   // `window` has been rewrite by `GM`. And because of `with(window)`, only directly using `jQuery` works here (for my opinion).
   // eslint-disable-next-line no-undef
 })(jQuery)
-
-// 更新记录：
-// v1.0.0 基础功能，适配自定义域名；
-// v1.0.1 增加支持 topic 页，修复bug；
-// v1.0.2 增加非指定扩展名的报错提示；
-// v1.0.3 匹配编辑器对文件名的修改，修复bug；
-// v1.0.4 增加豆瓣图片链接的额外处理；
-// v1.0.5 修复新增功能导致的bug；
-// v1.0.6 细节问题修复；
-
-// v1.1.0 将“插入图片至简介最后”修改为“插入图片至简介光标处” (Thanks @shadows)
-// v1.1.1 细节优化；
-// v1.1.2 增加括号的匹配；
