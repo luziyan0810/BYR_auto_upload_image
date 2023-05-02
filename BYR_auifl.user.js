@@ -35,7 +35,7 @@ if (window.GM_info && window.GM_info.script) {
   $('#kdescr, .ckeditor')
     .closest('tr')
     .before(
-      '<tr id="pic_info_row"><td class="rowhead nowrap">插入图片</td><td><input type="button" id="pic_info_process" value="开始"></td></tr>'
+      '<tr id="pic_info_row"><td class="rowhead nowrap">插入图片</td><td align="left"><input type="button" id="pic_info_process" value="开始"></td></tr>'
     )
 
   $('#pic_info_process').click(function () {
@@ -336,10 +336,10 @@ if (window.GM_info && window.GM_info.script) {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         const match = xhr.responseText.match(
-          /\/ckfinder\/userfiles\/images\/[^']+/
+          /(?<=')ckfinder\/userfiles\/images\/[^']+/
         )
         if (match) {
-          const imageURL = match[0]
+          const imageURL = '/' + match[0]
           callback(imageURL)
         }
       }
